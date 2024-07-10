@@ -1,0 +1,85 @@
+Schema      : Customer
+Atrributes  : [id, name, phone, email, vehicle_no, running_km]
+
+1. Api for listing all customer details
+
+    url     : http://127.0.0.1:8000/api/customers/
+    
+    method  : get
+
+    body    : nil
+
+    authorization: nil 
+
+2. Api for adding new customer details
+
+    url     : http://127.0.0.1:8000/api/customers/
+    
+    method  : post
+
+    body    : {
+        name:"customer_name",
+        phone:"customer phone",
+        email:"customer email",
+        vehicle_no:"customer vehicle_no",
+        running_km:"customer running_km"
+    }
+
+    authorization: nil
+
+3. Api for fetching customer details
+
+    url     : http://127.0.0.1:8000/api/customers/{id}/
+    
+    method  : get
+
+    body    : nii
+
+    authorization: nil
+
+4. Api for updating customer details
+
+    url     : http://127.0.0.1:8000/api/customers/{id}/
+    
+    method  : put
+
+    body    : {
+        name:"customer_name",
+        phone:"customer phone",
+        email:"customer email",
+        vehicle_no:"customer vehicle_no",
+        running_km:"customer running_km"
+    }
+
+    authorization: nil
+
+5. Api for removing a customer
+
+    url     : http://127.0.0.1:8000/api/customers/{id}/
+    
+    method  : delete
+
+    body    : nii
+
+    authorization: nil
+
+6. api for fetching token
+
+    url     : http://127.0.0.1:8000/api/token/
+
+    method  : post
+
+    body    :[username,password]
+
+    authorization: nil
+
+
+7. api for fetching access token by passing refreshtoken
+
+    url     : http://127.0.0.1:8000/api/token/refresh/
+
+    method  : post
+
+    body    :[refresh_token]
+
+    authorization: nil
